@@ -1,4 +1,5 @@
 ﻿using Data;
+using Dominio;
 using System;// está mais em branco pois está sendo utilizada
 using System.Collections.Generic;
 using System.Linq;

@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace Dominio
+
 {
     public class Pessoa
     {
@@ -64,6 +66,13 @@ namespace Data
             #endregion
 
         }
+
+        public void Deletar(string nome)
+        {
+            acessoDados.Deletar(nome);
+
+        }        
+
     }
 }
 

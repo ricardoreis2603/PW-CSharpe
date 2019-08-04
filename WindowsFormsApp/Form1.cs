@@ -28,13 +28,24 @@ namespace WindowsFormsApp
 
         private void CarregarPessoas()
         {
-            dtgLista.DataSource = ps.Ler();
+            List<Pessoa> pessoas = new List<Pessoa>();
+            pessoas = ps.Ler();
+            foreach (var item in pessoas)
+            {
+                DataGridViewRow row = new DataGridViewRow();
+                
+                dtgLista.Rows.Add(row);
+                
+                
+            }
+
+
         }
 
         private void BtSalvar_Click(object sender, EventArgs e)
         {
             p.Nome = textBoxNome.Text;
-            p.NumeroTelefone = textBoxTelefone.Text;
+            p.Contato.NumeroTelefone = textBoxTelefone.Text;
             ps.Gravar(p);
             Limpar();
             CarregarPessoas();
@@ -58,7 +69,7 @@ namespace WindowsFormsApp
         private void Gravar()
         {
            p.Nome = textBoxNome.Text;
-           p.NumeroTelefone = textBoxTelefone.Text;
+           p.Contato.NumeroTelefone = textBoxTelefone.Text;
         }
 
         

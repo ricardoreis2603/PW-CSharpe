@@ -38,6 +38,9 @@
             this.dtgLista = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -100,9 +103,13 @@
             // 
             this.dtgLista.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dtgLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
+            this.Nome,
+            this.Telefone});
             this.dtgLista.Location = new System.Drawing.Point(281, 21);
             this.dtgLista.Name = "dtgLista";
-            this.dtgLista.Size = new System.Drawing.Size(479, 417);
+            this.dtgLista.Size = new System.Drawing.Size(494, 401);
             this.dtgLista.TabIndex = 6;
             // 
             // label1
@@ -124,6 +131,21 @@
             this.pictureBox1.Size = new System.Drawing.Size(223, 223);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            // 
+            // Telefone
+            // 
+            this.Telefone.HeaderText = "Telefone";
+            this.Telefone.Name = "Telefone";
             // 
             // Form1
             // 
@@ -160,6 +182,9 @@
         private System.Windows.Forms.DataGridView dtgLista;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefone;
     }
 }
 

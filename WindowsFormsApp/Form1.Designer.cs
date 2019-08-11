@@ -36,11 +36,11 @@
             this.btSalvar = new System.Windows.Forms.Button();
             this.btLimpar = new System.Windows.Forms.Button();
             this.dtgLista = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgLista)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -111,6 +111,22 @@
             this.dtgLista.Name = "dtgLista";
             this.dtgLista.Size = new System.Drawing.Size(494, 401);
             this.dtgLista.TabIndex = 6;
+            this.dtgLista.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DtgLista_CellContentClick);
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            // 
+            // Telefone
+            // 
+            this.Telefone.HeaderText = "Telefone";
+            this.Telefone.Name = "Telefone";
             // 
             // label1
             // 
@@ -131,21 +147,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(223, 223);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            // 
-            // Telefone
-            // 
-            this.Telefone.HeaderText = "Telefone";
-            this.Telefone.Name = "Telefone";
             // 
             // Form1
             // 

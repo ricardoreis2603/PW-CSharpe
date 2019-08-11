@@ -1,4 +1,5 @@
 ﻿using Dominio;
+
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,10 +9,14 @@ using System.Threading.Tasks;
 
 namespace Data.Contexto
 {
+    
     public class ContextoProway : DbContext
     {
+        public DbSet<Endereco> Endereco { get; set; }
+        public DbSet<Contato> Contato { get; set; }
         public DbSet<Pessoa> Pessoa { get; set; }
-        public ContextoProway():base("server=mysql.topskills.study;user id=topskills02; Password=Ricardo2019; database=topskills02;persistsecurityinfo=True")
+
+        public ContextoProway():base(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\66046\Documents\GitHub\Data\DbLocal\Database.mdf;Integrated Security=True")
         {
 
         }
